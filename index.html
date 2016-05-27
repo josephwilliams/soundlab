@@ -3,13 +3,63 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1> grumpy wizards </h1>
+      <header></header>
       <canvas id="canvas" width="500" height=500"> </canvas>
+
+     <div id="cauldron">
+       <img src="https://67.media.tumblr.com/3ece9710277a78dad6ef5d3253399fc0/tumblr_o7r744yqvf1vns4tpo1_540.png">
+
+      <div id="under-grid">
+         <div id="playButton">&#9654;</div>
+         <div id="clearButton">&#10226;</div>
+      </div>
+
+      <div id="waveforms">
+        <p> wave form </p>
+        <input type="radio" name="waveform" value="saw" checked="checked" id="sawRadio"></input>
+        <input type="radio" name="waveform" value="square" id="squareRadio"></input>
+      </div>
+
+      <div id="sliders">
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="tempoSlider"></input>
+          <p>Tempo</p>
+        </div>
+
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="delaySlider"></input>
+          <p>Delay</p>
+        </div>
+
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="cutoffSlider"></input>
+          <p>Cutoff</p>
+        </div>
+
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="resonanceSlider"></input>
+          <p>Resonance</p>
+        </div>
+
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="releaseSlider"></input>
+          <p>Release</p>
+        </div>
+
+        <div id="slider">
+          <input type="range" min="0" max="1" step=".0001" id="attackSlider"></input>
+          <p>Attack</p>
+        </div>
+
+     </div>
+   </div>
 
       <script src="./js/audio.js"></script>
       <script src="./js/sequencer.js"></script>
-      <script src="./js/matrix.js"></script>
+      <script src="./js/controls.js"></script>
+      <script src="./js/circles.js"></script>
   </body>
 </html>

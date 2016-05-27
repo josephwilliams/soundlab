@@ -1,71 +1,27 @@
 body {
+	background: "#fff";
 	font-family: 'Monoton', cursive;
   text-align: center;
 }
 
-h1 {
+header:before {
+	font-size: 32px;
+	content: "";
 	margin: 0px;
 }
 
 #canvas  {
-	background: lightgrey;
+	background: transparent;
 	margin: auto;
-	position: relative;
 	display: block;
-	padding: 4px;
-	cursor: crosshair;
 }
 
-/*#main {
-  display: inline-block;
-  border: thin dotted black;
-  padding: 10px;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-#main h1 {
-  margin-bottom: 8px;
-  margin-top: 0;
-  background-color: black;
-  color: white;
-  cursor: default;
-}
-
-#main a {
-  text-transform: none;
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  margin-top: 8px;
-  transition: background-color .25s, color .25s;
-  padding: 4px;
-}
-
-#main a:hover {
-  background-color: black;
-  color: white;
-}*/
-
-
-/*
-.glideCell, .noteCell {
-  border: thin solid black;
-  width: 20px;
-  height: 10px;
-  background-color: white;
-  transition: background-color .125s, opacity .125s;
-}*/
-
-/*#controls {
-  margin-top: 8px;
+#controls {
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 8px;
+  margin: auto;
   display: block;
-  border: thin dashed black;
-  height: 100%;
-  padding: 4px;
-
+  width: 575px;
 }
 
 #controls p {
@@ -74,50 +30,95 @@ h1 {
   margin: 0;
 }
 
-#transport {
-  width: 100%;
-  text-align: center;
-}
-
-
-
-#transport td {
-  width: 33%;
-  height: 50px;
-  border: thin solid black;
-  transition: color .125s, background-color .125s;
+#playButton {
+	font-size: 34px;
+  position: absolute;
+  left: 250px;
+  top: 5px;
   cursor: pointer;
 }
 
-#transport td:hover {
-  color: white;
-  background-color: black;
+#playButton:hover {
+	color: #A020F0;
+}
+
+#playButton:active {
+	color: #350066;
+}
+
+#clearButton:hover {
+	color: #A020F0;
+}
+
+#clearButton:active {
+	color: #350066;
+}
+
+#clearButton {
+	font-size: 34px;
+	position: absolute;
+	left: 300px;
+	cursor: pointer;
+}
+
+#cauldron {
+	position: relative;
+  margin: auto;
+  width: 500px;
+}
+
+#cauldron img {
+	position: relative;
+}
+
+#under-grid {
+	position: absolute;
+	top: 25px;
+	left: -275px;
 }
 
 #sliders {
-  width: 100%;
-  border-collapse: none;
+	font-family: 'Quicksand', sans-serif;
+	position: absolute;
+	background: white;
+  top: 88px;
+  left: 149px;
+	width: 220px;
 }
 
-#sliders  input{
+#slider {
+	display: flex;
+	align-items: center;
+}
+
+#slider input{
+	-webkit-appearance: none;
+	height: 1px;
+	background: #350066;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#slider input::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #99ffca;
+  border: 2px solid #A020F0;
+  z-index: 3;
   cursor: pointer;
 }
 
 #radios {
-  text-align: center;
-  margin: auto auto;
+	text-align: center;
+	margin: auto auto;
 }
 
-#radios input {
-  display: inline-block;
-  width: 40%;
-  height: 100%;
-  cursor: pointer;
+#waveforms {
+	font-family: 'Quicksand', sans-serif;
+	position: absolute;
+	top: 0px;
+	left: 460px;
 }
-
-#sliders td {
-  height: 100%;
-  padding: 0 8px;
-  margin: 0px;
-  cursor: default;
-}*/

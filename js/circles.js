@@ -63,7 +63,6 @@ function drawGrid() {
               }
             }
           }
-
   // c.closePath();
 }
 
@@ -89,14 +88,13 @@ function handleClick(e) {
 
     for (var k = 0; k < selectedNotes[x].length; k++) {
       if (selectedNotes[x][k] === y){
-        selectedNotes[x].splice(i, 1);
+        console.log(selectedNotes[x]);
+        selectedNotes[x].splice(k, 1);
       }
     }
 
     paintCell(xRaw, yRaw, "#99ffca");
   }
-
-  console.log(selectedCells);
 }
 
 function paintCell(x, y, color) {

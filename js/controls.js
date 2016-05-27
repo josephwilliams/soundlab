@@ -52,7 +52,7 @@ playButton.addEventListener("click", function() {
 var clearButton = document.getElementById("clearButton");
 clearButton.addEventListener("click", function() {
   clearGrid();
-  seq.init();
+  // seq.init();
   requestAnimationFrame(draw);
 });
 

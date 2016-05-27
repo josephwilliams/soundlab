@@ -128,9 +128,9 @@ synth.amp.connect(delayAmp);
 // SYNTH INTERFACE
 // -------------------------------------------------
 
-synth.playNote = function(freq, glide, trigger, t) {
+synth.playNote = function(freq, trigger, t) {
   var now = t || audio.currentTime;
-  var rate = glide ? synth.glideRate : 0.0000001;
+  var rate = 0.0000001;
 
   synth.osc.frequency.setTargetAtTime(freq, now, rate);
 

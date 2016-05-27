@@ -1,13 +1,7 @@
+// alternate style with square grid rather than circles
+
 var canvas = document.getElementById("canvas");
 var c = canvas.getContext("2d");
-
-// var img = new Image();
-// img.src = 'http://www.wmata.com/img/icon-marble-RED.gif';
-// img.width = 30;
-// img.height = 30;
-// img.onload = function() {
-//   var pattern = c.createPattern(img, 'repeat');
-// };
 
 // range of notes (y)
 var range = 15;

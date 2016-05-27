@@ -1,28 +1,7 @@
 var seq = {
   size: 16,
   range: 15,
-  note: [],
-  trigger: [],
 };
-
-seq.init = function() {
-  for(var i = 0; i < seq.size; i++) {
-    seq.note[i] = null;
-    seq.trigger[i] = true;
-  }
-};
-
-seq.randomize = function() {
-  // seq.init();
-  // for(var i = 0; i < seq.size; i++) {
-  //   if(Math.random() < 0.8) {
-  //     seq.note[i] = Math.floor(Math.random() * seq.range);
-  //     seq.trigger[i] = Math.random() < 0.85;
-  //   }
-  // }
-};
-
-// seq.randomize();
 
 var playback = {
   pos: 0,
@@ -35,14 +14,12 @@ var playback = {
   lookahead: 0.05
 };
 
-
 playback.increment = function() {
   playback.pos = (playback.pos + 1) % seq.size;
   playback.interval = 15 / playback.tempo;
-  // delay.delayTime.value = 3 * playback.interval;
+  delay.delayTime.value = 3 * playback.interval;
   playback.time += playback.interval;
 };
-
 
 playback.update = function() {
   var currentTime = audio.currentTime;
@@ -64,10 +41,14 @@ playback.update = function() {
 };
 
 playback.triggerSynth = function(pos, t) {
-  // if(seq.note[pos] !== null) {
-  //   var freq = mtof(seq.note[pos]);
-  //   synth.playNote(freq, seq.glide[pos], seq.trigger[pos], t);
-  // }
+  currentNotes = selectedNotes[playback.pos];
+  if (currentNotes.length > 0) {
+    for (var i = 0; i < currentNotes.length; i++) {
+      var note = currentNotes[i];
+      var freq = mtof(note);
+      synth.playNote(freq, t);
+    }
+  }
 };
 
 playback.start = function() {
@@ -78,7 +59,6 @@ playback.start = function() {
 };
 
 playback.stop = function() {
-
   clearTimeout(playback.id);
 };
 

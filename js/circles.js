@@ -88,7 +88,6 @@ function handleClick(e) {
 
     for (var k = 0; k < selectedNotes[x].length; k++) {
       if (selectedNotes[x][k] === y){
-        console.log(selectedNotes[x]);
         selectedNotes[x].splice(k, 1);
       }
     }

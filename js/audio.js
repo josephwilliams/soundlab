@@ -67,8 +67,7 @@ sig.start(0);
 var synth = {
   attackTime: 0.01,
   sustainTime: 0.1,
-  decayTime: 0.25,
-  glideRate: 0.05
+  decayTime: 0.25
 };
 
 // -------------------------------------------------

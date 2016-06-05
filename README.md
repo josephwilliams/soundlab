@@ -3,7 +3,7 @@
 The dreaded tone matrix.. a musical step sequencer utilizing the HTML5 WebAudioKit API, HTML5 Canvas, Javascript, JQuery, and some spiffy CSSification in order to deliver, to your ears, by your own hand, bassy beats and tasty trebles that are sure to blow your mind.
 
 *See it live to believe:*
-[soundlab](./soundlab.png)
+[soundlab](http://josephwilliams.github.io/soundlab/)
 
 ![soundlab](./soundlab.png)
 

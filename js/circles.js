@@ -23,8 +23,6 @@ canvas.height = range * cellSize + 1;
 canvas.addEventListener('click', handleClick);
 
 function drawGrid() {
-  // c.lineWidth = 4;
-  // c.strokeStyle = "#fff";
   for (var row = 0; row < range; row++) {
       for (var col = 0; col < size; col++) {
           var x = col * cellSize;
@@ -63,7 +61,6 @@ function drawGrid() {
               }
             }
           }
-  // c.closePath();
 }
 
 function handleClick(e) {

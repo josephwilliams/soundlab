@@ -64,3 +64,13 @@ var sawRadio = document.getElementById("sawRadio");
 sawRadio.addEventListener("change", function() {
   synth.osc.type = "sawtooth";
 });
+
+var sawRadio = document.getElementById("sineRadio");
+sawRadio.addEventListener("change", function() {
+  synth.osc.type = "sine";
+});
+
+var sawRadio = document.getElementById("triangleRadio");
+sawRadio.addEventListener("change", function() {
+  synth.osc.type = "triangle";
+});

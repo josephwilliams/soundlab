@@ -1,8 +1,3 @@
-var seq = {
-  size: 16,
-  range: 15,
-};
-
 var playback = {
   pos: 0,
   id: 0,
@@ -15,7 +10,7 @@ var playback = {
 };
 
 playback.increment = function() {
-  playback.pos = (playback.pos + 1) % seq.size;
+  playback.pos = (playback.pos + 1) % size;
   playback.interval = 15 / playback.tempo;
   delay.delayTime.value = 3 * playback.interval;
   playback.time += playback.interval;
@@ -31,7 +26,7 @@ playback.update = function() {
 
     if (playback.time !== lastD) {
       lastD = playback.time;
-      hlCol = (playback.pos + (seq.size - 1)) % seq.size;
+      hlCol = (playback.pos + (size - 1)) % size;
 
       requestAnimationFrame(draw);
     }

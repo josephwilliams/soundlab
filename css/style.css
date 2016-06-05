@@ -17,7 +17,7 @@ body {
 
 header:before {
 	font-size: 32px;
-	content: "sound LAB";
+	content: "sound lab";
 	margin: 0px;
 }
 
@@ -129,9 +129,50 @@ header:before {
 
 #waveforms {
 	font-family: 'Quicksand', sans-serif;
-	position: absolute;
-	top: 0px;
-	left: 460px;
+  position: absolute;
+	top: 5px;
+  left: 460px;
+}
+
+#waveforms label {
+	color: black;
+	font-weight: bolder;
+}
+
+input[type="radio"] {
+	display: block;
+  width: 65px;
+  height: 25px;
+  border: 1px solid white;
+	border-radius: 3px;
+  background: transparent;
+	margin: 5px 0px;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -o-appearance: button;
+  -ms-appearance: button;
+  appearance: button;
+}
+
+input[type="radio"]:hover {
+	background: #99ffca;
+}
+
+input[type="radio"]:checked {
+	display: block;
+  width: 65px;
+  height: 25px;
+  border: 2px solid white;
+  background: #99ffca;
+	color: white;
+}
+
+#waveforms label {
+	display: block;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 /*BUBBLES*/

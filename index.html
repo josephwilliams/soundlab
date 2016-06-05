@@ -5,8 +5,10 @@
     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="./sound_icon.ico" type="image/x-icon">
+    <link rel="icon" href="./sound_icon.ico" type="image/x-icon">
   </head>
-  <title>SoundLAB</title>
+  <title>soundlab</title>
   <body>
       <header></header>
       <canvas id="canvas" width="500" height=500"> </canvas>
@@ -26,9 +28,17 @@
       </div>
 
       <div id="waveforms">
-        <p> wave form </p>
+        <label for="sawRadio" style="top:10px; left:22px">saw</label>
         <input type="radio" name="waveform" value="saw" checked="checked" id="sawRadio"></input>
+
+        <label for="squareRadio" style="top:40px; left:14px">square</label>
         <input type="radio" name="waveform" value="square" id="squareRadio"></input>
+
+        <label for="sineRadio" style="top:70px; left:22px">sine</label>
+        <input type="radio" name="waveform" value="sine" id="sineRadio"></input>
+
+        <label for="triangleRadio" style="top:100px; left:10px">triangle</label>
+        <input type="radio" name="waveform" value="triangle" id="triangleRadio"></input>
       </div>
 
       <div id="sliders">
@@ -66,7 +76,7 @@
    </div>
 
       <script src="./js/gradient.js"></script>
-      <script src="./js/audio2.js"></script>
+      <script src="./js/audio.js"></script>
       <script src="./js/sequencer.js"></script>
       <script src="./js/controls.js"></script>
       <script src="./js/circles.js"></script>

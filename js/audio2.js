@@ -2,6 +2,10 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 var audio = new AudioContext();
 
+// -------------------------------------------------
+// OUTPUTS
+// -------------------------------------------------
+
 // This should remove any DC offset that is introduced by any hacky stuff
 var dcKiller = audio.createBiquadFilter();
 dcKiller.type = "highpass";

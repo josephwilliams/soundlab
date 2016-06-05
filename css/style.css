@@ -164,7 +164,7 @@ div#bubble-container span.glow {
   1% {bottom:110px;-webkit-transform:scale(.3);opacity:0}
   30% {bottom:110px;-webkit-transform:scale(.8);opacity:0.7}
   95% {bottom:400px;-webkit-transform:scale(.3);opacity:0.5}
-  100% {bottom:400px;-webkit-transform:scale(.3);opacity:0.3}
+  100% {bottom:600px;-webkit-transform:scale(.3);opacity:0.3}
 }
 div#bubble-container span.bubble {
   background:#fff;

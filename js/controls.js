@@ -2,7 +2,6 @@ function sliderControl(id, target, property, min, max) {
   var slider = document.getElementById(id);
   var range = max - min;
 
-  // init gui
   slider.value = (target[property] - min) / range;
 
   slider.addEventListener("input", function() {
@@ -16,7 +15,7 @@ sliderControl("attackSlider", synth, 'attackTime', 0.001, 0.06);
 sliderControl("releaseSlider", synth, 'decayTime', 0.05, 0.75);
 sliderControl("delaySlider", delayAmp.gain, 'value', 0, 0.75);
 // sliderControl("volumeSlider", out.gain, 'value', 0, 0.35);
-sliderControl("tempoSlider", playback, 'tempo', 40, 300);
+sliderControl("tempoSlider", playback, 'tempo', 10, 250);
 
 document.body.onkeyup = function(e){
     if(e.keyCode == 32){

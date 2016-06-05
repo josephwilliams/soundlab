@@ -112,7 +112,7 @@ synth.filter.Q.value = 10;
 synth.filter.connect(synth.amp);
 
 synth.cutoff = audio.createGain();
-synth.cutoff.gain.value = 2500;
+synth.cutoff.gain.value = 500;
 synth.cutoff.connect(synth.filter.frequency);
 synth.adsrF.connect(synth.cutoff);
 
@@ -137,7 +137,7 @@ synth.playNote = function(freq, t) {
 
   synth.osc.frequency.setTargetAtTime(freq, now, rate);
 
-  // synth.adsr.gain.cancelScheduledValues(now);
+  synth.adsr.gain.cancelScheduledValues(now);
   synth.adsr.gain.setValueAtTime(0, now);
   synth.adsr.gain.setTargetAtTime(1, now, synth.attackTime);
   synth.adsr.gain.setTargetAtTime(0, now + (synth.attackTime * 2), synth.decayTime);

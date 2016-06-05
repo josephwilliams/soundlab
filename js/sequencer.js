@@ -40,7 +40,9 @@ playback.triggerSynth = function(pos, t) {
   if (currentNotes.length > 0) {
     for (var i = 0; i < currentNotes.length; i++) {
       var note = currentNotes[i];
-      var freq = mtof(note);
+      // switches bass/treble top/bottom of circles
+      var adjustedNote = range + 1 - note;
+      var freq = mtof(adjustedNote);
       synth.playNote(freq, t);
     }
   }

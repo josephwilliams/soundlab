@@ -50,19 +50,19 @@ header:before {
 }
 
 #playButton:hover {
-	color: #A020F0;
+	color: #fff;
 }
 
 #playButton:active {
-	color: #350066;
-}
-
-#clearButton:hover {
 	color: #A020F0;
 }
 
+#clearButton:hover {
+	color: #fff;
+}
+
 #clearButton:active {
-	color: #350066;
+	color: #A020F0;
 }
 
 #clearButton {
@@ -156,7 +156,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	/*background: #99ffca;*/
 }
 
@@ -167,6 +167,11 @@ input[type="radio"]:checked {
   border: 2px solid white;
   background: #99ffca;
 	color: white;
+
+	animation:greenPulse 2s infinite;
+	-webkit-animation:greenPulse 2s infinite;
+	-moz-animation:greenPulse 2s infinite;
+	-o-animation:greenPulse 2s infinite;
 }
 
 #waveforms label {

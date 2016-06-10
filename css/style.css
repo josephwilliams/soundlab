@@ -143,7 +143,7 @@ input[type="radio"] {
 	display: block;
   width: 65px;
   height: 25px;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 	border-radius: 3px;
   background: transparent;
 	margin: 5px 0px;
@@ -156,7 +156,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover {
-	background: #99ffca;
+	border: 1px solid white;
+	/*background: #99ffca;*/
 }
 
 input[type="radio"]:checked {

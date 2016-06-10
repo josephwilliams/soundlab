@@ -8,3 +8,4 @@ The dreaded tone matrix.. a musical step sequencer utilizing the HTML5 WebAudioK
 ![soundlab](./soundlab.png)
 
 Credit to [Devin Dominguez Audio](http://www.dominguezaudio.com/) for the fat lines of code necessary to forge and alter sound in so many a unique and exciting way.
+open

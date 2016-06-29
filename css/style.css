@@ -27,6 +27,10 @@ header:before {
 	display: block;
 }
 
+#canvas:hover {
+	cursor: pointer;
+}
+
 #controls {
 	font-family: 'Quicksand', sans-serif;
 	margin-top: 8px;

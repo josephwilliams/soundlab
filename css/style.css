@@ -138,6 +138,10 @@ header:before {
   left: 460px;
 }
 
+#waveforms:hover {
+	cursor: pointer;
+}
+
 #waveforms label {
 	color: black;
 	font-weight: bolder;
@@ -160,8 +164,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover {
-	/*border: 1px solid white;*/
-	/*background: #99ffca;*/
+	cursor: pointer;
 }
 
 input[type="radio"]:checked {

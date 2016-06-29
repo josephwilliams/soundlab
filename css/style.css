@@ -147,6 +147,10 @@ header:before {
 	font-weight: bolder;
 }
 
+#waveforms label:hover {
+	cursor: pointer;
+}
+
 input[type="radio"] {
 	display: block;
   width: 65px;
